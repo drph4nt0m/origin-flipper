@@ -1,0 +1,14 @@
+{
+    "editor.bracketPairColorization.enabled": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.guides.bracketPairs": "active",
+    "editor.linkedEditing": true,
+    "editor.minimap.enabled": false,
+    "files.autoSave": "onFocusChange",
+    "npm.enableRunFromFolder": true,
+    "typescript.updateImportsOnFileMove.enabled": "always"
+}

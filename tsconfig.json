@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "lib": ["DOM", "ESNext"],
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "baseUrl": "./",
+        "paths": {
+            "@src/*": ["src/*"],
+            "@decorators/*": ["src/decorators/*"]
+        },
+        "resolveJsonModule": true,
+        "allowJs": true,
+        "sourceMap": true,
+        "outDir": "./dist/js",
+        "noEmitOnError": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "allowSyntheticDefaultImports": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "noImplicitAny": true,
+        "skipLibCheck": true
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome",
+            "webRoot": "${workspaceFolder}",
+            "runtimeArgs": ["--load-extension=${workspaceFolder}/dist"],
+            "sourceMaps": true,
+            "trace": true,
+            "cwd": "${workspaceFolder}",
+            "resolveSourceMapLocations": ["${workspaceFolder}/dist/**/*", "!**/node_modules/**"],
+            "sourceMapPathOverrides": {
+                "webpack:///./~/*": "${workspaceFolder}/node_modules/*",
+                "webpack://?:*/*": "${workspaceFolder}/*"
+            },
+            "outFiles": ["${workspaceFolder/dist/**", "!**/node_modules/**"]
+        }
+    ]
+}

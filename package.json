@@ -1,0 +1,64 @@
+{
+    "name": "origin-flipper",
+    "version": "1.0.0",
+    "description": "URL origin redirector",
+    "author": "Rahul Singh <hey@rhul.me>",
+    "scripts": {
+        "watch": "webpack --config webpack/webpack.js --watch",
+        "build": "webpack --config webpack/webpack.js",
+        "build:clean": "npm run clean && npm run build",
+        "lint": "eslint . --ext .ts --max-warnings 0",
+        "lint:fix": "eslint . --ext .ts --fix",
+        "prettier": "prettier . -w",
+        "deps:check": "npx npm-check-updates",
+        "deps:update": "npx npm-check-updates -u && npm install",
+        "clean": "rimraf dist",
+        "test": "jest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/drph4nt0m/origin-flipper.git"
+    },
+    "bugs": {
+        "url": "https://github.com/drph4nt0m/origin-flipper/issues"
+    },
+    "homepage": "https://github.com/drph4nt0m/origin-flipper#readme",
+    "dependencies": {
+        "@material/mwc-button": "^0.27.0",
+        "@material/mwc-circular-progress": "^0.27.0",
+        "@material/mwc-icon": "^0.27.0",
+        "@material/mwc-icon-button": "^0.27.0",
+        "@material/mwc-list": "^0.27.0",
+        "@material/mwc-snackbar": "^0.27.0",
+        "@material/mwc-textfield": "^0.27.0",
+        "@material/mwc-top-app-bar-fixed": "^0.27.0",
+        "easy-file-picker": "^1.0.3",
+        "file-saver": "^2.0.5",
+        "reflect-metadata": "^0.1.13",
+        "tsyringe": "^4.7.0",
+        "zod": "^3.21.4"
+    },
+    "devDependencies": {
+        "@types/file-saver": "^2.0.5",
+        "@types/webextension-polyfill": "^0.10.0",
+        "@typescript-eslint/eslint-plugin": "^5.52.0",
+        "@typescript-eslint/parser": "^5.52.0",
+        "copy-webpack-plugin": "^11.0.0",
+        "eslint": "^8.34.0",
+        "eslint-config-prettier": "^8.6.0",
+        "eslint-plugin-import": "^2.27.5",
+        "eslint-plugin-simple-import-sort": "^10.0.0",
+        "prettier": "^2.8.4",
+        "ts-loader": "^9.4.2",
+        "tsconfig-paths-webpack-plugin": "^4.0.0",
+        "typescript": "^4.9.5",
+        "webextension-polyfill": "^0.10.0",
+        "webpack": "^5.75.0",
+        "webpack-cli": "^5.0.1",
+        "webpack-merge": "^5.8.0"
+    },
+    "engines": {
+        "node": ">=18.10.0",
+        "npm": ">=8.19.2"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "recommendations": [
+        "christian-kohler.npm-intellisense",
+        "christian-kohler.path-intellisense",
+        "cschlosser.doxdocgen",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "mgmcdermott.vscode-language-babel",
+        "redhat.fabric8-analytics",
+        "steoates.autoimport",
+        "wayou.vscode-todo-highlight",
+        "wix.vscode-import-cost"
+    ]
+}
