@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
 
-    "name": "origin-flipper",
+    "name": "Origin flipper",
     "version": "1.0.0",
     "description": "URL origin redirector",
     "author": "Rahul Singh <hey@rhul.me>",
