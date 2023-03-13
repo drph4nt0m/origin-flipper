@@ -6,7 +6,10 @@ import browser, { tabs } from "webextension-polyfill";
 
 @singleton()
 class Worker {
-    public constructor(private redirectsManager: RedirectsManager) {
+    private redirectsManager: RedirectsManager;
+
+    public constructor() {
+        this.redirectsManager = container.resolve(RedirectsManager);
         browser.webNavigation.onBeforeNavigate.addListener((details) => this.handleOnBeforeNavigate(details));
     }
 
