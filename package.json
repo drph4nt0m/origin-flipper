@@ -1,6 +1,6 @@
 {
     "name": "origin-flipper",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "URL origin redirector",
     "author": "Rahul Singh <hey@rhul.me>",
     "scripts": {
