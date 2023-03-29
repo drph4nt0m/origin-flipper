@@ -1,15 +1,15 @@
 import "reflect-metadata";
 
-import { RedirectsManager } from "@src/redirects";
+import { OriginRedirectsManager } from "@manager/originRedirects";
 import { container, singleton } from "tsyringe";
 import browser, { tabs } from "webextension-polyfill";
 
 @singleton()
 class Worker {
-    private redirectsManager: RedirectsManager;
+    private originRedirectsManager: OriginRedirectsManager;
 
     public constructor() {
-        this.redirectsManager = container.resolve(RedirectsManager);
+        this.originRedirectsManager = container.resolve(OriginRedirectsManager);
         browser.webNavigation.onBeforeNavigate.addListener((details) => this.handleOnBeforeNavigate(details));
     }
 
@@ -21,7 +21,7 @@ class Worker {
                 return;
             }
 
-            const redirect = await this.redirectsManager.get(origin);
+            const redirect = await this.originRedirectsManager.get(origin);
 
             if (!redirect) {
                 return;

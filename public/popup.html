@@ -27,9 +27,16 @@
                 <mwc-icon-button id="save-btn" icon="check" slot="actionItems"></mwc-icon-button>
             </mwc-top-app-bar-fixed>
             <div class="main">
-                <div id="redirects">
+                <!-- <div id="origins">
+                    <span id="empty-config">No configurations found. Click <mwc-icon-button id="add-row-btn" icon="add"></mwc-icon-button> to add a configuration.</span>
+                </div> -->
+                <div id="paths">
                     <span id="empty-config">No configurations found. Click <mwc-icon-button id="add-row-btn" icon="add"></mwc-icon-button> to add a configuration.</span>
                 </div>
+                <mwc-tab-bar>
+                    <mwc-tab label="Origins"></mwc-tab>
+                    <mwc-tab label="Paths"></mwc-tab>
+                </mwc-tab-bar>
                 <mwc-circular-progress id="loading" class="active" indeterminate></mwc-circular-progress>
             </div>
             <footer><a id="author" href="https://github.com/drph4nt0m">drph4nt0m</a> / <a id="repo" href="https://github.com/drph4nt0m/origin-flipper">origin-flipper</a></footer>
